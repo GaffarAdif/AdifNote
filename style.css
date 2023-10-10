@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #7C81AD;
+}
+
+.container{
+height: 100%;
+width: 100%;
+padding: 20px;
+
+}
+ .header{
+    height: 80px;
+    width: 100%;
+    background-color: #FFF8C9;
+    padding: 20px;
+    border-radius: 10px;
+ }
+ .header h1 i{
+margin-right: 10px;
+ }
+
+
+ /* btn div style start here  */
+
+
+ .button-div{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end ;
+
+ }
+
+
+.btn {
+    margin-right: 40px;
+    height: 40px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .4px solid yellow;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    transition: left 0.3s ease; /* Add transition for left property */
+}
+.btn:hover::before {
+    left: 0;
+}
+.btn i{
+background-color: yellow;
+border-radius: 50%;
+font-size: 30px;
+margin-right: 15px;
+padding: 5px;
+z-index: 100;
+}
+.btn span{
+font-size: 15px;
+z-index: 100;
+}
+
+/* div sectioin style here  */
+.note-div{
+    height: 250px;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+   overflow: hidden;
+position: relative;
+float: left;
+margin: 20px;
+
+}
+
+.edi-del{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+    align-items: center;
+position: absolute;
+z-index: 100;
+}
+.ed-btn{
+    font-size: 25px;
+    background-color: red;
+    border:none;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+.ed-btn:hover{
+    background-color: transparent;
+color: #D0BFFF;
+}
+.ed-btn-2{
+    background-color: greenyellow;
+}
+.ed-btn-2:hover{
+    background-color: transparent;
+    color: #CDFAD5;
+}
+
+.note-div textarea{
+    padding:40px 5px 5px 5px ;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border: none;
+    font-size: 22px;
+ 
+}
+/* for hidder  */
+.hidden{
+    display: none;
+}
+
+.main-div{
+    padding:40px 0px 0px 0px ;
+    height: 100%;
+    width: 100%;  
+    font-size: 18px;
+}
